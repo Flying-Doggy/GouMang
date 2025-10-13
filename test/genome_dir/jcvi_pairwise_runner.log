@@ -1,0 +1,35 @@
+2025-10-12 15:34:16,198 [INFO] Starting JCVI pairwise runner
+2025-10-12 15:34:16,198 [INFO] Input directory: /home/gujianhui/BLOCKOME/GouMang/test/genome_dir
+2025-10-12 15:34:16,198 [INFO] Found 4 taxa with matching seq/bed pairs
+2025-10-12 15:34:16,198 [INFO] Total pairwise comparisons: 6
+2025-10-12 15:34:16,198 [INFO] Grouped by target taxon (B): 3 groups
+2025-10-12 15:34:16,200 [INFO] Running JCVI for pair: Brachypodium_distachyon vs Oryza_sativa 
+2025-10-12 15:34:16,201 [INFO] Running JCVI for pair: Brachypodium_distachyon vs Sorghum_bicolor 
+2025-10-12 15:34:16,202 [INFO] Running JCVI for pair: Brachypodium_distachyon vs Zea_mays 
+2025-10-12 15:34:54,320 [INFO] Group Oryza_sativa completed (1 pairs)
+2025-10-12 15:35:03,323 [INFO] Running JCVI for pair: Oryza_sativa vs Sorghum_bicolor 
+2025-10-12 15:35:15,870 [INFO] Running JCVI for pair: Oryza_sativa vs Zea_mays 
+2025-10-12 15:35:28,297 [INFO] Group Sorghum_bicolor completed (2 pairs)
+2025-10-12 15:35:41,532 [INFO] Running JCVI for pair: Sorghum_bicolor vs Zea_mays 
+2025-10-12 15:36:11,173 [INFO] Group Zea_mays completed (3 pairs)
+2025-10-12 15:36:11,174 [INFO] Moved 12 anchors to genome_dir/anchors
+2025-10-12 15:36:11,305 [INFO] Cleaned 33 intermediate JCVI db files
+2025-10-12 15:36:11,305 [INFO] All tasks finished. Anchors collected at: /home/gujianhui/BLOCKOME/GouMang/test/genome_dir/anchors
+2025-10-12 15:36:11,305 [INFO] Log file: /home/gujianhui/BLOCKOME/GouMang/test/genome_dir/jcvi_pairwise_runner.log
+2025-10-12 16:37:02,135 [INFO] Validated 4 taxa with matching seq/bed pairs.
+2025-10-12 16:37:02,135 [INFO] Total pairwise comparisons: 6
+2025-10-12 16:37:02,135 [INFO] Grouped by target taxon: 3 groups
+2025-10-12 16:37:02,137 [INFO] Running JCVI for: Brachypodium_distachyon vs Oryza_sativa
+2025-10-12 16:37:02,138 [INFO] Running JCVI for: Brachypodium_distachyon vs Sorghum_bicolor
+2025-10-12 16:37:02,138 [INFO] Running JCVI for: Brachypodium_distachyon vs Zea_mays
+2025-10-12 16:37:44,280 [INFO] Group Oryza_sativa completed (1 pairs)
+2025-10-12 16:37:53,032 [INFO] Running JCVI for: Oryza_sativa vs Sorghum_bicolor
+2025-10-12 16:38:01,077 [INFO] Running JCVI for: Oryza_sativa vs Zea_mays
+2025-10-12 16:38:20,618 [INFO] Group Sorghum_bicolor completed (2 pairs)
+2025-10-12 16:38:27,142 [INFO] Running JCVI for: Sorghum_bicolor vs Zea_mays
+2025-10-12 16:38:58,294 [INFO] Group Zea_mays completed (3 pairs)
+2025-10-12 16:38:58,296 [INFO] Moved 12 anchors to genome_dir/anchors
+2025-10-12 16:38:58,485 [INFO] Cleaned 33 intermediate JCVI files.
+2025-10-12 16:38:58,485 [INFO] All JCVI comparisons finished successfully.
+2025-10-12 16:38:58,485 [INFO] Anchors collected in: /home/gujianhui/BLOCKOME/GouMang/test/genome_dir/anchors
+2025-10-12 16:38:58,485 [INFO] Log file: /home/gujianhui/BLOCKOME/GouMang/test/genome_dir/jcvi_pairwise_runner.log

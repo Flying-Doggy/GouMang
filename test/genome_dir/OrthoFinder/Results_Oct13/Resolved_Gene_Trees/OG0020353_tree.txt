@@ -1,0 +1,1 @@
+(Zea_mays_transcript_Zm00001eb016060_T001:0.0882888,(Oryza_sativa_transcript_Os05t0491800-00:0.757404,(Oryza_sativa_transcript_Os01t0832450-00:0.0621621,Oryza_sativa_transcript_Os05t0467150-00:0.256827)n2:0.133846)n1:0.0882888)n0;

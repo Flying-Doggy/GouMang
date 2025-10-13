@@ -1,0 +1,1 @@
+(Oryza_sativa_transcript_Os08t0469100-01:0.0834482,(Sorghum_bicolor_transcript_OQU80621:0.196724,(Sorghum_bicolor_transcript_OQU80622:0.478742,(Sorghum_bicolor_transcript_OQU80383:0.0430687,Zea_mays_transcript_Zm00001eb178610_T001:0.0963018)1:0.427048)0.696:0.0890076)1:0.0834482);

@@ -1,0 +1,1 @@
+((Zea_mays_transcript_Zm00001eb222430_T002:5e-09,Zea_mays_transcript_Zm00001eb222430_T003:0.0117461)n1:0.129919,(Brachypodium_distachyon_transcript_PNT67465:5e-09,(Brachypodium_distachyon_transcript_PNT67467:5e-09,Brachypodium_distachyon_transcript_PNT67466:5e-09)n3:5e-09)n2:0.129919)n0;

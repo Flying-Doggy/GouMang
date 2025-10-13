@@ -1,0 +1,1 @@
+(Brachypodium_distachyon_transcript_PNT65728:0.159212,(Zea_mays_transcript_Zm00001eb353990_T001:5e-09,(Zea_mays_transcript_Zm00001eb353990_T004:5e-09,(Zea_mays_transcript_Zm00001eb353990_T002:0,Zea_mays_transcript_Zm00001eb353990_T003:0,Zea_mays_transcript_Zm00001eb353990_T005:0):5e-09):5e-09):0.159212);

@@ -1,0 +1,1 @@
+(Brachypodium_distachyon_transcript_KQK10252:0.131584,(Oryza_sativa_transcript_Os01t0810800-01:0.193302,(Oryza_sativa_transcript_Os01t0811001-00:0.282466,(Oryza_sativa_transcript_Os01t0810500-00:0.208829,Oryza_sativa_transcript_Os01t0810600-00:0.181937)0.982:0.10997)0.729:0.0293096)1:0.131584);

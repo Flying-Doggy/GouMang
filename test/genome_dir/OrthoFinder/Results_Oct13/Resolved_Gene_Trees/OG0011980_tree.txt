@@ -1,0 +1,1 @@
+((Brachypodium_distachyon_transcript_KQJ90715:0.120067,Oryza_sativa_transcript_Os09t0482740-01:0.108328)n1:0.0596488,(Sorghum_bicolor_transcript_KXG35886:0.0133299,(Zea_mays_transcript_Zm00001eb316450_T003:5e-09,(Zea_mays_transcript_Zm00001eb316450_T001:5e-09,Zea_mays_transcript_Zm00001eb316450_T002:5e-09)n4:6e-09)n3:0.0499477)n2:0.0596488)n0;

@@ -1,0 +1,1 @@
+(Zea_mays_transcript_Zm00001eb009760_T001:2.5e-09,(Zea_mays_transcript_Zm00001eb019490_T001:5e-09,(Zea_mays_transcript_Zm00001eb173750_T001:0.416033,Zea_mays_transcript_Zm00001eb215590_T001:0.0284499)n2:0.0209868)n1:2.5e-09)n0;

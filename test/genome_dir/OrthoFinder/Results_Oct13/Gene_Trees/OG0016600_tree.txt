@@ -1,0 +1,1 @@
+(Zea_mays_transcript_Zm00001eb433060_T001:0,(Zea_mays_transcript_Zm00001eb433060_T002:0,Zea_mays_transcript_Zm00001eb433060_T003:0,Zea_mays_transcript_Zm00001eb433060_T004:0,Zea_mays_transcript_Zm00001eb384020_T001:0.344882):0);

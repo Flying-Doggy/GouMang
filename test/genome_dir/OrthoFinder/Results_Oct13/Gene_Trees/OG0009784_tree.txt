@@ -1,0 +1,1 @@
+((Zea_mays_transcript_Zm00001eb211290_T001:0.0704644,((Zea_mays_transcript_Zm00001eb211300_T001:0,Zea_mays_transcript_Zm00001eb211300_T003:0):5e-09,Zea_mays_transcript_Zm00001eb211300_T002:6e-09):0.0100583):0.0846944,(Brachypodium_distachyon_transcript_KQK12345:0.169394,Oryza_sativa_transcript_Os03t0829200-01:0.17438):0.0846944);

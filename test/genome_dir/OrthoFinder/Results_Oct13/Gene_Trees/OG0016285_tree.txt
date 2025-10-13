@@ -1,0 +1,1 @@
+(Sorghum_bicolor_transcript_KXG20370:0.0987095,((Oryza_sativa_transcript_Os06t0617800-01:0,Oryza_sativa_transcript_Os06t0617800-02:0,Oryza_sativa_transcript_Os06t0617800-03:0):5e-09,Oryza_sativa_transcript_Os06t0617800-05:5e-09):0.0987095);
