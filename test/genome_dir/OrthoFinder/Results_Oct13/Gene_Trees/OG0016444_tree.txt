@@ -1,1 +1,0 @@
-(Sorghum_bicolor_transcript_OQU82746:0.0502154,((Sorghum_bicolor_transcript_EES07887:0.114614,Sorghum_bicolor_transcript_OQU82724:0.114441)1:0.166085,(Sorghum_bicolor_transcript_EES09149:5e-09,Sorghum_bicolor_transcript_OQU82747:5e-09)0.951:5e-09)1:0.0502154);

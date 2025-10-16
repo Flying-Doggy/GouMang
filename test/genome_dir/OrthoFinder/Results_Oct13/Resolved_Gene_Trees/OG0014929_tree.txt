@@ -1,1 +1,0 @@
-(Brachypodium_distachyon_transcript_KQJ97505:0.0113824,(Brachypodium_distachyon_transcript_KQJ97503:0.0319162,(Brachypodium_distachyon_transcript_PNT67745:5e-09,(Brachypodium_distachyon_transcript_KQJ97504:5e-09,Brachypodium_distachyon_transcript_KQJ97506:0.0435805)n3:0.0250266)n2:0.0170767)n1:0.0113824)n0;

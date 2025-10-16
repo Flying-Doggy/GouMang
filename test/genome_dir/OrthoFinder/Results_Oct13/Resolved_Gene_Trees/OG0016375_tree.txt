@@ -1,1 +1,0 @@
-(Sorghum_bicolor_transcript_OQU88458:2.5e-09,(Sorghum_bicolor_transcript_KXG34431:5e-09,(Sorghum_bicolor_transcript_OQU88456:5e-09,(Sorghum_bicolor_transcript_OQU88459:5e-09,Sorghum_bicolor_transcript_OQU88457:5e-09)n3:0.0356723)n2:5e-09)n1:2.5e-09)n0;

@@ -1,1 +1,0 @@
-(((Oryza_sativa_transcript_Os06t0499500-03:0,Oryza_sativa_transcript_Os06t0499500-01:0):5e-09,Oryza_sativa_transcript_Os06t0499500-02:0.0258949):0.164716,((Brachypodium_distachyon_transcript_PNT74884:0,Brachypodium_distachyon_transcript_KQK15584:0):0.0346338,(Brachypodium_distachyon_transcript_KQK15585:5e-09,Brachypodium_distachyon_transcript_PNT74885:5e-09):0.0119754):0.164716);

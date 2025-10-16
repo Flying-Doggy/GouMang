@@ -1,1 +1,0 @@
-(Brachypodium_distachyon_transcript_KQJ81828:0.228312,(Zea_mays_transcript_Zm00001eb028080_T001:0.138976,(Zea_mays_transcript_Zm00001eb419720_T002:0.0215043,(Zea_mays_transcript_Zm00001eb419710_T006:5e-09,(Zea_mays_transcript_Zm00001eb419710_T003:5e-09,Zea_mays_transcript_Zm00001eb419710_T005:6e-09)1:0.110215)0.855:0.0262034)0.699:0.0244467)1:0.228312);

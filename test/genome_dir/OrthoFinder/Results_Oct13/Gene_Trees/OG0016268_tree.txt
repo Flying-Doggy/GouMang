@@ -1,1 +1,0 @@
-(Oryza_sativa_transcript_Os05t0559900-02:0.0374525,((Zea_mays_transcript_Zm00001eb343520_T004:5e-09,Zea_mays_transcript_Zm00001eb343520_T001:5e-09)0.853:5e-09,(Zea_mays_transcript_Zm00001eb343520_T002:5e-09,Zea_mays_transcript_Zm00001eb343520_T003:0.00093676)0.9:0.000990494)1:0.0374525);

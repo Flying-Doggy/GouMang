@@ -1,1 +1,0 @@
-(Oryza_sativa_transcript_Os11t0655300-01:0.265182,(Oryza_sativa_transcript_Os07t0141700-00:0.682661,(Oryza_sativa_transcript_Os11t0654100-01:0.18588,Oryza_sativa_transcript_Os11t0655200-01:0.160037)1:0.455028)1:0.265182);

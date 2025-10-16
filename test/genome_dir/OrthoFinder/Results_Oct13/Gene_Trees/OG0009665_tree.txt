@@ -1,1 +1,0 @@
-(Sorghum_bicolor_transcript_KXG25534:0.0410706,(((Zea_mays_transcript_Zm00001eb175190_T001:0,Zea_mays_transcript_Zm00001eb175190_T003:0):6e-09,Zea_mays_transcript_Zm00001eb175190_T002:0.00363748):0.0480932,(Zea_mays_transcript_Zm00001eb175150_T001:0.140947,(Zea_mays_transcript_Zm00001eb175150_T003:5e-09,Zea_mays_transcript_Zm00001eb175150_T002:5e-09):5e-09):0.0332213):0.0410706);

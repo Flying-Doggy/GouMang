@@ -52,11 +52,27 @@ Each of these files contributes to identifying and quantifying conserved genomic
 
 ### Step3. Convert Segments Based on Orthologues
 
-To cluster segments from different genomes, it's necessary to align all genes. Here, we use `orthofinder` to get orthogroups for all genes. Thus, you need to provide a gene matrix like orthofinder output:
+To cluster segments from different genomes, it's necessary to align all genes. Here, we use `orthofinder` to get orthogroups for all genes. Thus, you need to provide a gene matrix like orthofinder output.
 
+Learn the [orthofinder manual](https://github.com/davidemms/OrthoFinder) to attain the orthologues, you can easily run orthofinder with following command:
+`orthofinder -f genome_dir/`
+
+the format of output ``  is like:
 ```text
     TAXON-A  TAXON-B ...
 G_α Aα1, Aα2   Bα1 ...
 G_β   Aβ1     Bβ1 ...
 ...
 ```
+
+Use `segments_unifier.py` to convert genome segments into an aligned orthogroup-based format and cluster them into several segment groups.
+Each group represents a set of homologous genomic regions. Within each group, all member segments are ordered and merged to reconstruct an ancestral super-segment that serves as the representative sequence of the group.
+
+```shell
+python segments_unifier.py \
+    --segments splitted/chromosome_splits.csv  \
+    --orthogroups genome_dir/OrthoFinder/Results_Oct13/Orthogroups/Orthogroups.tsv \
+    --output segments_group_representatives.bed
+```
+
+### Step4. build ancestral super-segment genome

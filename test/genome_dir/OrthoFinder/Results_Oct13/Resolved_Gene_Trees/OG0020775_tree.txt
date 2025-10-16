@@ -1,1 +1,0 @@
-(Sorghum_bicolor_transcript_EER94681:0.129142,(Zea_mays_transcript_Zm00001eb020240_T001:0.16242,(Zea_mays_transcript_Zm00001eb020240_T002:5e-09,Zea_mays_transcript_Zm00001eb020240_T003:6e-09)n2:0.0332166)n1:0.129142)n0;

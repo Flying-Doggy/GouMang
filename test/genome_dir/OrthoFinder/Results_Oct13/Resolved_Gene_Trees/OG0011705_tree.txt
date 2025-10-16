@@ -1,1 +1,0 @@
-(Sorghum_bicolor_transcript_OQU89086:0.554872,(Brachypodium_distachyon_transcript_PNT69589:0.432214,(Brachypodium_distachyon_transcript_KQJ87765:0.212377,(Brachypodium_distachyon_transcript_PNT63906:0.481596,(Brachypodium_distachyon_transcript_PNT65585:0.00442978,Brachypodium_distachyon_transcript_PNT65584:5e-09)n4:0.126705)n3:0.223886)n2:0.692157)n1:0.554872)n0;

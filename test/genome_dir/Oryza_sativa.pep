@@ -1,1 +1,0 @@
-/home/gujianhui/BLOCKOME/02.blocks/Oryza_sativa.pep

@@ -1,1 +1,0 @@
-(Sorghum_bicolor_transcript_OQU90423:0.301737,(Zea_mays_transcript_Zm00001eb179900_T001:0.660148,(Zea_mays_transcript_Zm00001eb296900_T001:0.0168857,(Zea_mays_transcript_Zm00001eb044850_T003:5e-09,(Zea_mays_transcript_Zm00001eb044850_T002:5e-09,Zea_mays_transcript_Zm00001eb044850_T001:5e-09)n4:5e-09)n3:0.00691191)n2:0.531853)n1:0.301737)n0;

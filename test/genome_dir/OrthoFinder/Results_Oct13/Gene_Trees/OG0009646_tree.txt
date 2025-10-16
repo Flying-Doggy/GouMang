@@ -1,1 +1,0 @@
-((Zea_mays_transcript_Zm00001eb085760_T001:5e-09,Zea_mays_transcript_Zm00001eb085760_T002:5e-09)1:0.0351381,((Sorghum_bicolor_transcript_OQU81362:5e-09,(Sorghum_bicolor_transcript_OQU81361:0.00164949,Sorghum_bicolor_transcript_OQU81365:5e-09)0.753:5e-09)0.945:5e-09,(Sorghum_bicolor_transcript_OQU81363:5e-09,Sorghum_bicolor_transcript_OQU81364:5e-09)0.127:5e-09)1:0.0351381);

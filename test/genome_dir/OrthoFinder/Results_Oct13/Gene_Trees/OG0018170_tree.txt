@@ -1,1 +1,0 @@
-((Brachypodium_distachyon_transcript_KQK05432:0,Brachypodium_distachyon_transcript_KQK05428:0):0.0670281,(Zea_mays_transcript_Zm00001eb292710_T001:0,Zea_mays_transcript_Zm00001eb292710_T002:0):0.0670281);

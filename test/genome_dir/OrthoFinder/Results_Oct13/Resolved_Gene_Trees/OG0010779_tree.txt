@@ -1,1 +1,0 @@
-((Brachypodium_distachyon_transcript_PNT70894:5e-09,Brachypodium_distachyon_transcript_PNT70893:5e-09)n1:0.294269,((Sorghum_bicolor_transcript_OQU78320:0,Sorghum_bicolor_transcript_OQU78321:0)n3:0.0733527,(Sorghum_bicolor_transcript_KXG22369:5e-09,Sorghum_bicolor_transcript_KXG22371:5e-09)n4:0.0210106)n2:0.294269)n0;

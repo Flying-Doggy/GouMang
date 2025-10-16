@@ -1,1 +1,0 @@
-(Oryza_sativa_transcript_Os02t0121400-00:0.368485,(Brachypodium_distachyon_transcript_KQJ92986:5e-09,(Brachypodium_distachyon_transcript_KQJ92987:5e-09,Brachypodium_distachyon_transcript_KQJ92988:5e-09)0.734:5e-09)1:0.368485);

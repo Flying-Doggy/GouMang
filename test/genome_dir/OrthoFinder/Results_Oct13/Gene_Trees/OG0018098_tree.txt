@@ -1,1 +1,0 @@
-((Zea_mays_transcript_Zm00001eb132020_T002:0.0777878,Zea_mays_transcript_Zm00001eb132020_T004:5e-09)1:0.123085,(Brachypodium_distachyon_transcript_KQK04374:0.0484016,Brachypodium_distachyon_transcript_KQK04372:0.04355)1:0.123085);

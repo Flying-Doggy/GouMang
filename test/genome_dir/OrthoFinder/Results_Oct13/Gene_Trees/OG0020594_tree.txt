@@ -1,1 +1,0 @@
-((Oryza_sativa_transcript_Os04t0489600-01:0.206173,Oryza_sativa_transcript_Os04t0489600-02:5e-09)0.999:0.126666,(Sorghum_bicolor_transcript_KXG26600:5e-09,Sorghum_bicolor_transcript_KXG26599:5e-09)0.999:0.126666);
