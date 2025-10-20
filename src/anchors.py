@@ -2,7 +2,7 @@
 """
 JCVI All-vs-All Pairwise Runner (Class-based version)
 
-Author: [Your Name]
+Author: Flying-Doggy
 Date: 2025-10-12
 
 Description:
@@ -42,10 +42,10 @@ import concurrent.futures
 
 class JCVIPairwiseRunner:
     """Class to perform JCVI all-vs-all pairwise synteny comparisons."""
-    def __init__(self, input_dir: Path, anchors_dir: Path, jcvi_args: str,
+    def __init__(self, input_dir: Path, anchors_dir: Path,  jcvi_args: str,
                  cpus: int = 8, dbtype: str = "prot", parallel: int = 1,
                  keep_intermediates: bool = False, dry_run: bool = False,
-                 log_file: Path | None = None):
+                 log_file: Path | None = None , reference_id:str = None):
         self.input_dir = input_dir.resolve()
         self.anchors_dir = anchors_dir
         self.jcvi_args = shlex.split(jcvi_args)
@@ -55,6 +55,7 @@ class JCVIPairwiseRunner:
         self.keep_intermediates = keep_intermediates
         self.dry_run = dry_run
         self.log_file = log_file or (self.input_dir / "jcvi_pairwise_runner.log")
+        self.reference_id = reference_id
 
         self.LOGGER = logging.getLogger("jcvi_pairwise_runner")
         self._setup_logging()
@@ -207,7 +208,11 @@ class JCVIPairwiseRunner:
         bed_prefixes = self.prefixes_from_files(bed_files, '.bed')
         prefixes = self.validate_pairs(seq_prefixes, bed_prefixes)
 
-        pairs = list(combinations(prefixes, 2))
+        if self.reference_id is None:
+            pairs = list(combinations(prefixes, 2))
+        else:
+            pairs = [(b, self.reference_id) for b in prefixes if b != self.reference_id]
+
         self.LOGGER.info("Total pairwise comparisons: %d", len(pairs))
 
         grouped = self.group_pairs_by_target(pairs)
@@ -245,6 +250,7 @@ def get_args():
     parser = argparse.ArgumentParser(description="Run JCVI all-vs-all ortholog comparisons across multiple taxa.")
     parser.add_argument("input_dir", help="Directory containing .pep/.bed or .cds/.bed files")
     parser.add_argument("--anchors-dir", default="anchors", help="Output directory for collected .anchors files")
+    parser.add_argument("--reference", type=str, default=None , help="Reference species prefix (not used in pairwise mode)")
     parser.add_argument("--jcvi-args", default="--no_dotplot --no_strip_names", help="Additional JCVI parameters")
     parser.add_argument("--cpus", type=int, default=8, help="Number of CPUs for JCVI execution")
     parser.add_argument("--dbtype", default="prot", choices=["prot", "cds"], help="Database type (prot/cds)")
@@ -267,5 +273,6 @@ if __name__ == "__main__":
         keep_intermediates=args.keep_intermediates,
         dry_run=args.dry_run,
         log_file=Path(args.log_file) if args.log_file else None,
+        reference_id=args.reference
     )
     runner.run()

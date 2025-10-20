@@ -328,7 +328,7 @@ def extract_taxon_genes(taxon_OG_dic:Dict, target_taxon:str, query_OGs:set) -> s
     return taxon_genes
 
 
-def check_genome_files_exist(genome_dir:str, taxa:List[str]) -> List[str]:
+def check_genome_files_exist(genome_dir:str, taxa:List[str] , suffix:str = 'pep') -> List[str]:
     """
     Verify the presence of genome (.pep and .bed) files for each taxon.
 
@@ -341,12 +341,28 @@ def check_genome_files_exist(genome_dir:str, taxa:List[str]) -> List[str]:
     """
     available_taxa = []
     for taxon in taxa:
-        pep_path = os.path.join(genome_dir, f"{taxon}.pep")
-        bed_path = os.path.join(genome_dir, f"{taxon}.bed")
+        pep_path = os.path.join(genome_dir, f"{taxon}.{suffix}")
+        bed_path = os.path.join(genome_dir, f"{taxon}.{suffix}")
         if os.path.isfile(pep_path) and os.path.isfile(bed_path):
             available_taxa.append(taxon)
     return available_taxa
 
+def get_seq_suffix(genome_dir:str, taxa:List[str]) -> str:
+    """
+    Determine the suffix of sequence files in the genome directory.
+
+    Args:
+        genome_dir (str): Directory containing genome files.
+        taxa (List[str]): List of taxon names.
+
+    Returns:
+        str: Suffix of the sequence files (e.g., 'pep', 'faa').
+    """
+    for taxon in taxa:
+        for suffix in ['pep', 'faa', 'fasta', 'fa', 'cds']:
+            if os.path.isfile(os.path.join(genome_dir, f"{taxon}.{suffix}")):
+                return suffix
+    return 'pep'  # Default suffix
 
 # ============================================================
 # extract_limited module
@@ -380,7 +396,8 @@ def extract_limited(orthogroups_file:str, ancestor_bed:str, ancestor_genome:str,
     all_taxa = list(taxon_OG_dic.keys())
 
     # 3. Check genome availability
-    valid_taxas = check_genome_files_exist(genome_dir_A, all_taxa)
+    suffix = get_seq_suffix( genome_dir_A , all_taxa)
+    valid_taxas = check_genome_files_exist(genome_dir_A, all_taxa , suffix= suffix)
     if len(valid_taxas) == len(all_taxa):
         print(f"[INFO] All species genome files are available.")
     else:
@@ -391,12 +408,12 @@ def extract_limited(orthogroups_file:str, ancestor_bed:str, ancestor_genome:str,
     ancestor_limited_bed = extract_bed(ancestor_bed, limited_genes, prefix=prefix_pattern)
     ancestor_limited_pep = generate_queried_seq(ancestor_limited_bed, ancestor_seq, prefix_pattern='')
 
-    write_fasta(ancestor_limited_pep, os.path.join(output_dir_B, 'ancestor_limited.fa'))
+    write_fasta(ancestor_limited_pep, os.path.join(output_dir_B, f'ancestor_limited.{suffix}'))
     write_bed(ancestor_limited_bed, os.path.join(output_dir_B, 'ancestor_limited.bed'))
 
     # 5. Generate limited files for each valid taxon
     for taxon in valid_taxas:
-        pep_path = os.path.join(genome_dir_A, f"{taxon}.pep")
+        pep_path = os.path.join(genome_dir_A, f"{taxon}.{suffix}")
         bed_path = os.path.join(genome_dir_A, f"{taxon}.bed")
 
         taxon_limited_genes = extract_taxon_genes(taxon_OG_dic, taxon, limited_genes)
@@ -405,7 +422,7 @@ def extract_limited(orthogroups_file:str, ancestor_bed:str, ancestor_genome:str,
         seqs = read_fasta(pep_path)
         taxon_limited_seq = {gid: seq for gid, seq in seqs.items() if gid in taxon_limited_genes}
 
-        write_fasta(taxon_limited_seq, os.path.join(output_dir_B, f"{taxon}_limited.fa"))
+        write_fasta(taxon_limited_seq, os.path.join(output_dir_B, f"{taxon}_limited.{suffix}"))
         write_bed(taxon_limited_bed, os.path.join(output_dir_B, f"{taxon}_limited.bed"))
 
     print(f"[INFO] All frequency-limited files written to {output_dir_B}")

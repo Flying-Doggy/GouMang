@@ -76,3 +76,58 @@ python segments_unifier.py \
 ```
 
 ### Step4. build ancestral super-segment genome
+
+Before constructing the ancestral genome, representative sequences of all OGs are collected. For each Orthogroup (OG), extract the longest sequence as its representative. 
+
+```shell
+python fasta_parser.py generate_OG_representatives \
+    --dir test/genome_dir/OrthoFinder/Results_Oct13/Orthogroup_Sequences/ \
+    --output test/OG_seq.fa
+```
+
+Extract target sequences from a genome FASTA file according to gene identifiers listed in a BED file.
+This module supports **regex-based** gene ID matching, enabling flexible prefix handling (e.g., species tags or numeric IDs).
+```shell
+python fasta_parser.py extract_seqs \
+    --bed test/segments_group_representatives.bed  \
+    --genome  test/OG_seq.fa \
+    --prefix [0-9]+- \
+    --output test/super_segments.fa
+```
+
+Filter Orthogroups by occurrence frequency (e.g., to exclude multi-copy/non-conserved OGs) and generate corresponding limited BED and FASTA files for each taxon and the super_segments.
+
+```shell
+python fasta_parser.py extract_limited  \
+    --orthogroups test/genome_dir/OrthoFinder/Results_Oct13/Orthogroups/Orthogroups.tsv \
+    --ancestor_bed test/segments_group_representatives.bed  \
+    --ancestor_genome  test/super_segments.fa \
+    --genome_dir test/genome_dir/  \
+    --output_dir test/lt_2  \
+    --max_freq 2 \
+    --prefix [0-9]+-
+```
+
+### Step5. existing chromosome regions annotation
+
+Since we bulid a common ancestral genome for the analyzed lineage with previous process, all genomes are supposed to be aligned to the common ancestral genome for further analysis.
+
+Here, we also utilize JCVI to get the genomic collinear relationship. 
+```shell
+python src/anchors.py test/lt_2/ \
+    --anchors-dir test/lt_2/anchors \
+    --reference ancestor_limited
+```
+Note. the suffix of sequence file should be `cds` or `pep`
+
+all regions of each chromosome will be parsed from the anchors aligned to `ancestor_limited`, and a similarity matrix will be computed to cluster all chromosomes. If you need to re-annotate unified_segments regions with clustered chromosomes, remember to add `--reannote_ref` option.
+```shell
+python src/mapping_analysis.py  \
+    --ref_bed test/lt_2/ancestor_limited.bed  \
+    --bed_dir test/lt_2/ \
+    --anchor_dir test/lt_2/anchors/ \
+    --output_prefix test/lt_2/lt_2_mapping_res \
+    --reannote_ref
+```
+
+### Step6. visualization
