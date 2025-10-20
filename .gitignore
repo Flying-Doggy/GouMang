@@ -1,0 +1,14 @@
+/test/genome_dir/*
+
+# kepp 
+!/test/genome_dir/*.bed
+!/test/genome_dir/*.pep
+
+# keep Orthogroups.tsv
+!/genome_dir/OrthoFinder/Results_Oct13/Orthogroups/Orthogroups.tsv
+
+
+/test/lt_2/*
+
+# keep the final output
+!/test/lt_2/lt_2_mapping*

@@ -131,3 +131,8 @@ python src/mapping_analysis.py  \
 ```
 
 ### Step6. visualization
+
+To visualize the partitioned chromosomes with the output of `mapping_analysis.py`, I develop some scripts to plot a segmented rectangle representing a chromosome. 
+[Brachypodium_distachyon_genome](img/test_Brachypodium_distachyon_chromosomes.svg) 
+
+You can access more details in [plot exmaple](src/visualization.ipynb)
